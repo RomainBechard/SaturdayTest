@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import com.romainbechard.saturdaytest.SaturdayTestApplication
 import com.romainbechard.saturdaytest.databinding.MainFragmentBinding
 
 class MainFragment : Fragment() {
@@ -26,6 +27,12 @@ class MainFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val application: SaturdayTestApplication = requireContext().applicationContext as SaturdayTestApplication
+        mainViewModel.configure(application.repository)
     }
 
 }
