@@ -10,13 +10,15 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.jackson.JacksonConverterFactory
+import timber.log.Timber
 
 class SaturdayTestApplication : Application() {
 
     lateinit var repository: MyRepository
+    lateinit var photosHolder: PhotosHolder
 
     private val myApi: MyApi = Retrofit.Builder()
-        .baseUrl("https://jsonplaceholder.typicode.com/")
+        .baseUrl("https://pixabay.com/")
         .addConverterFactory(
             JacksonConverterFactory.create(
                 ObjectMapper()
@@ -36,7 +38,8 @@ class SaturdayTestApplication : Application() {
 
     override fun onCreate() {
         super.onCreate()
-
+        if (BuildConfig.DEBUG) Timber.plant(Timber.DebugTree())
         repository = MyRepository(myApi)
+        photosHolder = PhotosHolder()
     }
 }

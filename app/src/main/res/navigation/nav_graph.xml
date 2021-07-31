@@ -7,5 +7,17 @@
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.romainbechard.saturdaytest.ui.main.MainFragment"
-        android:label="MainFragment" />
+        android:label="MainFragment" >
+        <action
+            android:id="@+id/action_go_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.romainbechard.saturdaytest.ui.result.ResultFragment"
+        android:label="ListFragment" >
+        <action
+            android:id="@+id/action_go_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
 </navigation>

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">SaturdayTest</string>
+    <string name="une_erreur_inconnue_s_est_produite">Une erreur inconnue s\'est produite</string>
+    <string name="rechercher">Rechercher</string>
+    <string name="hello">Hello</string>
+    <string name="valider">Valider la sélection</string>
 </resources>
