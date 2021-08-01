@@ -22,4 +22,5 @@ class ResultViewModel : ViewModel() {
         this.photosHolder = photosHolder
     }
 
+
 }

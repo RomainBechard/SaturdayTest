@@ -7,7 +7,7 @@
         <entry key="..\:/Users/becha/AndroidStudioProjects/SaturdayTest/app/src/main/res/layout/list_fragment.xml" value="0.18704710144927536" />
         <entry key="..\:/Users/becha/AndroidStudioProjects/SaturdayTest/app/src/main/res/layout/main_activity.xml" value="0.17346014492753623" />
         <entry key="..\:/Users/becha/AndroidStudioProjects/SaturdayTest/app/src/main/res/layout/main_fragment.xml" value="0.3" />
-        <entry key="..\:/Users/becha/AndroidStudioProjects/SaturdayTest/app/src/main/res/layout/result_fragment.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/becha/AndroidStudioProjects/SaturdayTest/app/src/main/res/layout/result_fragment.xml" value="0.1" />
         <entry key="..\:/Users/becha/AndroidStudioProjects/SaturdayTest/app/src/main/res/xml/network_security_config.xml" value="0.18704710144927536" />
       </map>
     </option>
@@ -17,5 +17,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.1" />
+      </ProjectState>
+    </option>
   </component>
 </project>

@@ -43,6 +43,7 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         application = requireContext().applicationContext as SaturdayTestApplication
         binding.lifecycleOwner = this.viewLifecycleOwner
+        application.photosHolder.selectedPhotos = mutableListOf()
         mainViewModel.configure(application.repository, application.photosHolder)
 
         mainViewModel.badSelectionEvent.observe(
